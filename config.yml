@@ -1,0 +1,48 @@
+# Data Path
+data_path:
+  data.stock: "/Users/tungnguyen/PycharmProjects/StockRead/data/stock"
+  data.vocab: "/Users/tungnguyen/PycharmProjects/StockRead/data/vocab"
+
+# App Config
+app:
+  browser_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+  comments:
+    use_generators: false
+
+# Social Networks
+social:
+  youtube:
+    days_ago: 14
+    videos_per_day_per_channel: 3
+    comments_limit_to_pull_per_video: 200
+    minimum_video_uploads_per_channel: 10
+    comment_loading_sleep_time: 0.1
+    # comment crawling: ajax request config
+    ajax_request_sleep_time: 20
+    ajax_request_retries: 5
+
+# Finance
+finance:
+  ticker:
+    minimum_length: 2
+
+  stock:
+    NASDAQ:
+      url: "https://api.twelvedata.com/stocks?source=docs&exchange=NASDAQ"
+      json_filepath: ""
+    TSX:
+      url: "https://api.twelvedata.com/stocks?source=docs&exchange=TSX"
+      json_filepath: ""
+
+# NLP Vocabulary
+vocabulary:
+  dollar_countries: ['US', 'CA', 'AU', 'NZ', 'SG', 'TW', 'HK']
+  non_tickers:
+    filepath: "/Users/tungnguyen/PycharmProjects/StockRead/data/vocab/non_tickers.csv"
+  stock_keywords:
+    filepath: "/Users/tungnguyen/PycharmProjects/StockRead/data/vocab/stock_keywords.csv"
+
+
+
+
+
