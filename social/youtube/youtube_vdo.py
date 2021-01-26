@@ -1,3 +1,5 @@
+from pyyoutube.models.base import BaseModel
+
 try:
     import sys
 
@@ -34,7 +36,7 @@ YOUTUBE_COMMENTS_AJAX_NEW_API_URL = 'https://www.youtube.com/comment_service_aja
 
 
 @dataclass
-class Video:
+class Video(BaseModel):
     """
     A class representing for Youtube video.
 

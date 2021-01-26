@@ -36,6 +36,7 @@ class Channel(BaseModel):
     latest_video_title: Optional[str] = field(default=None, repr=False)
     latest_video_date: Optional[str] = field(default=None, repr=False)
     latest_video_time_ago: Optional[int] = field(default=None, repr=False)
+    keywords: Optional[str] = field(default=None, repr=False)
 
     def __post_init__(self):
 

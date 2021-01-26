@@ -1,3 +1,5 @@
+from pyyoutube.models.base import BaseModel
+
 try:
     import sys
 
@@ -16,7 +18,7 @@ except ModuleNotFoundError as err:
 
 
 @dataclass
-class Comment:
+class Comment(BaseModel):
     """
     A class representing for Youtube comment.
 
